@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ウェブサイト</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#top">TOP</a></li>
-                <li><a href="#info">INFO</a></li>
-                <li><a href="#news">NEWS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#recruit">RECRUIT</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<header class="header">
+    <nav class="nav">
+        <a href="#top" class="nav-logo"><img src="logo.png" alt="logo"></a>
+        <a href="#event" class="nav-item">EVENT</a>
+        <a href="#news" class="nav-item">NEWS</a>
+        <a href="#work" class="nav-item">WORK</a>
+        <a href="#company" class="nav-item">COMPANY</a>
+        <a href="#recruit" class="nav-item">RECRUIT</a>
+        <a href="#access" class="nav-item">ACCESS</a>
+    </nav>
+</header>
+
