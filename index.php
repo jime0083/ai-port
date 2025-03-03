@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Labo</title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-</head>
-<body>
-    <header>
-        <h1>Green Labo</h1>
-        <nav>
-            <ul>
-                <li><a href="#">GREEN LABO</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">COMPANY</a></li>
-                <li><a href="#">RECRUIT</a></li>
-                <li><a href="#">ACCESS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php get_header(); ?>
+
 
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -195,6 +172,42 @@
             </div>
         </div>
     </section>
+
+    <section class="recruit-section">
+        <div class="recruit-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/garden office9.png" alt="スタッフの写真">
+        </div>
+        <div class="recruit-container">
+            <div class="recruit-content">
+                <div class="recruit-text">
+                    <p class="recruit-label">RECRUIT</p>
+                    <h2 class="recruit-title">お花と緑のある豊かな生活を一緒に作りませんか。</h2>
+                </div>
+                <div class="recruit-bottom">
+                    <p class="recruit-description">お花や植物がお好きな方、経験者、未経験者問わず募集しております。</p>
+                    <a href="#" class="recruit-link">
+                        <span class="circle-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-overlay"></div>
+        <div class="contact-container">
+            <p class="contact-label">お問い合わせ</p>
+            <h2 class="contact-title">CONTACT</h2>
+            <p class="contact-description">
+                外構工事・お庭のご依頼はこちらからお気軽にご連絡ください。お問い合わせの多いご質問や、よくいただくご質問は別途「よくあるご質問」ページに掲載しておりますので、ご活用ください。
+            </p>
+            <a href="#" class="recruit-link">
+                <span class="circle-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <?php get_footer(); ?>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
