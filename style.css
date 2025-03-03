@@ -903,3 +903,366 @@ body {
         will-change: opacity, transform;
     }
 }
+
+/* 会社情報ページのスタイル */
+.page-header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.company-header {
+    background-image: url('img/green2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0;
+}
+
+/* レスポンシブ対応に以下を追加 */
+@media (max-width: 768px) {
+    .page-header {
+        height: 300px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+}
+
+/* ビジョンセクション */
+.vision-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.vision-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vision-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vision-title {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: normal;
+}
+
+.vision-text {
+    margin-bottom: 80px;
+    line-height: 2;
+}
+
+.vision-text p {
+    margin-bottom: 1.5em;
+}
+
+/* 社長メッセージ */
+.president-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+.president-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.president-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.president-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.president-details {
+    margin-bottom: 30px;
+}
+
+.company-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.president-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.president-name {
+    font-size: 24px;
+}
+
+.president-message {
+    line-height: 2;
+}
+
+.president-message p {
+    margin-bottom: 1.5em;
+}
+
+/* レスポンシブ対応を更新 */
+@media (max-width: 768px) {
+    .president-section {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .president-info {
+        width: 100%;
+    }
+
+    .president-image img {
+        max-width: 100%;
+    }
+}
+
+/* 沿革セクション */
+.history-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.history-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: url('img/green\ book1.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+}
+
+.history-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.history-title {
+    position: relative;
+    font-size: 36px;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.history-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -54px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+
+.timeline-date {
+    width: 120px;
+    font-size: 14px;
+    color: #333;
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .history-header {
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    .history-title {
+        font-size: 28px;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-item {
+        gap: 20px;
+    }
+
+    .timeline-item::before {
+        left: -34px;
+    }
+
+    .timeline-date {
+        width: 90px;
+        font-size: 13px;
+    }
+
+    .timeline-content {
+        font-size: 14px;
+    }
+}
+
+/* 会社概要セクション */
+.company-overview-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.overview-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: url('img/plant1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+}
+
+.overview-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overview-title {
+    position: relative;
+    font-size: 36px;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.overview-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.overview-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.overview-table th,
+.overview-table td {
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.8;
+}
+
+.overview-table th {
+    width: 180px;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .overview-header {
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    .overview-title {
+        font-size: 28px;
+    }
+
+    .overview-table th,
+    .overview-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .overview-table th {
+        padding-bottom: 5px;
+        border-bottom: none;
+    }
+
+    .overview-table td {
+        padding-top: 5px;
+    }
+}
