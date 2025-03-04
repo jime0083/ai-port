@@ -1266,3 +1266,92 @@ body {
         padding-top: 5px;
     }
 }
+
+/* 施工事例ページ */
+.work-header {
+    background-image: url('img/garden1.jpg');
+}
+
+.works-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.works-label {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.works-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-image {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.work-image:hover img {
+    transform: scale(1.05);
+}
+
+.work-item-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.work-item-text {
+    line-height: 1.8;
+    color: #333;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .works-section {
+        padding: 60px 0;
+    }
+
+    .works-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .work-item-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
