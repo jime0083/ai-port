@@ -1316,11 +1316,6 @@ body {
 .work-image img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease;
-}
-
-.work-image:hover img {
-    transform: scale(1.05);
 }
 
 .work-item-title {
