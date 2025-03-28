@@ -41,7 +41,7 @@ get_header(); ?>
 
             <div class="work-item">
                 <div class="work-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/garden office2.png" alt="伝統と革新が融合する働きやすいオフィス空間">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/garden office8.png" alt="伝統と革新が融合する働きやすいオフィス空間">
                 </div>
                 <h3 class="work-item-title">伝統と革新が融合する働きやすいオフィス空間</h3>
                 <p class="work-item-text">自然光・自然光が入りやすい日本家屋をイメージした建物内には、和テイストに合う観葉植物を多数配置しています。バイオフィリックデザインを取り入れ、環境配慮と働きやすさの両立を目指した次世代オフィスです。</p>

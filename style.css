@@ -1314,8 +1314,9 @@ body {
 }
 
 .work-image img {
-    width: 100%;
-    height: auto;
+    width: 550px;
+    height: 308px;
+    object-fit: cover;
 }
 
 .work-item-title {
