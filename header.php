@@ -18,13 +18,13 @@
         </h1>
         <nav class="global-nav">
             <ul class="nav-list">
-                <li class="has-dropdown"><a href="#">GREEN LABO</a></li>
+                <li class="has-dropdown"><a href="<?php echo home_url('/'); ?>">GREEN LABO</a></li>
                 <li><a href="#">EVENT</a></li>
                 <li><a href="#">NEWS</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">COMPANY</a></li>
-                <li><a href="#">RECRUIT</a></li>
-                <li><a href="#">ACCESS</a></li>
+                <li><a href="<?php echo home_url('/work'); ?>">WORKS</a></li>
+                <li><a href="<?php echo home_url('/company'); ?>">COMPANY</a></li>
+                <li><a href="<?php echo home_url('/recruit'); ?>">RECRUIT</a></li>
+                <li><a href="<?php echo home_url('/access'); ?>">ACCESS</a></li>
                 <li class="has-dropdown"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
