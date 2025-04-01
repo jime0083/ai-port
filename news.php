@@ -4,81 +4,47 @@ Template Name: News
 */
 get_header(); ?>
 
-<div class="page-header news-header">
+<div class="page-header news-page-header">
     <div class="page-header-overlay"></div>
     <h1 class="page-title">NEWS</h1>
 </div>
+<section class="news-page-section">
+    <div class="news-page-container">
+        <!-- ニュースアイテム1 -->
+        <?php
+            $news_query = new WP_Query(array(
+            'post_type'      => 'news',
+            'posts_per_page' => 3, // 最新5件を表示
+            ));
+        ?>
 
-<section class="news-section">
-    <div class="news-container">
-        <div class="news-list">
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2025.02.12</time>
-                    <h2 class="news-title">2025年春夏の教室開催スケジュールのお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
+        <?php if ($news_query->have_posts()) : ?>
+        <ul>
+            <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+            <li>
+                <div class="news-page-list">
+                    <article class="news-page-item">
+                        <a href="<?php the_permalink(); ?>" class="news-page-link">
+                            <time class="news-page-date"><?php echo get_the_date(); ?></time>
+                            <h2 class="news-page-title"><?php the_title(); ?></h2>
+                            <span class="news-page-arrow">→</span>
+                        </a>
+                    </article>
+                </div>
+            </li>
+            <?php endwhile; ?>
+        </ul>
 
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2025.02.01</time>
-                    <h2 class="news-title">臨時休業のお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2024.12.16</time>
-                    <h2 class="news-title">2025年1月、2月の営業日のお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2024.12.16</time>
-                    <h2 class="news-title">ウィンターセール、年末年始の休業のお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2024.08.17</time>
-                    <h2 class="news-title">9月、10月開催の教室　予約開始日時のお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2024.08.04</time>
-                    <h2 class="news-title">8月の営業日についてのお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2024.07.13</time>
-                    <h2 class="news-title">Barns Summer Saleのお知らせ</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-
-            <article class="news-item">
-                <a href="#" class="news-link">
-                    <time class="news-date">2023.11.20</time>
-                    <h2 class="news-title">ホームページをリニューアルしました</h2>
-                    <span class="news-arrow">→</span>
-                </a>
-            </article>
-        </div>
         <div class="back-to-top">
-            <a href="#" class="back-link">← BACK TO TOP</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="back-link">← BACK TO TOP</a>
         </div>
+        
+        <?php the_posts_pagination(); // ページネーション ?>
+        <?php else : ?>
+            <p>現在、ニュースはありません。</p>
+        <?php endif; ?>
+
+        
     </div>
 </section>
 

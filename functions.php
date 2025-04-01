@@ -56,6 +56,7 @@ function create_news_post_type() {
             ),
             'public'      => true,
             'has_archive' => true,
+            'rewrite'     => array('slug' => 'news'), 
             'supports'    => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
             'menu_position' => 5,
             'menu_icon'   => 'dashicons-megaphone',
@@ -63,7 +64,6 @@ function create_news_post_type() {
     );
 }
 add_action('init', 'create_news_post_type');
-
 
 
 

@@ -140,38 +140,41 @@
         </div>
     </section>
 
-    <section class="news-list-section">
-        <div class="news-container">
-            <div class="news-header">
-                <h2 class="news-title">NEWS</h2>
-                <p class="news-subtitle">NEWS & INFORMATION</p>
-                <a href="#" class="news-view-all">VIEW ALL →</a>
+    <section class="top-news-list-section">
+        <div class="top-news-container">
+            <div class="top-news-header-content">
+                <p class="top-news-label">NEWS & INFORMATION</p>
+                <h2 class="top-news-heading">NEWS</h2>
+                <a href="<?php echo home_url('/news-list'); ?>" class="top-news-view-all">VIEW ALL →</a>
             </div>
-            
-            <div class="news-items">
+            <div class="top-news-list">
                 <!-- ニュースアイテム1 -->
-                <a href="#" class="news-item">
-                    <span class="news-date">2025.02.12</span>
-                    <span class="news-text">2025年春夏の教室開催スケジュールのお知らせ</span>
-                    <span class="news-arrow">→</span>
-                </a>
+                <?php
+                    $news_query = new WP_Query(array(
+                    'post_type'      => 'news',
+                    'posts_per_page' => 3, // 最新5件を表示
+                    ));
+                ?>
 
-                <!-- ニュースアイテム2 -->
-                <a href="#" class="news-item">
-                    <span class="news-date">2025.02.01</span>
-                    <span class="news-text">臨時休業のお知らせ</span>
-                    <span class="news-arrow">→</span>
-                </a>
+                <?php if ($news_query->have_posts()) : ?>
 
-                <!-- ニュースアイテム3 -->
-                <a href="#" class="news-item">
-                    <span class="news-date">2024.12.16</span>
-                    <span class="news-text">2025年1月、2月の営業日のお知らせ</span>
-                    <span class="news-arrow">→</span>
-                </a>
+                <ul>
+                    <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+                    <li>
+                    <a href="<?php the_permalink(); ?>" class="top-news-list-item">
+                        <span class="top-news-list-date"><?php echo get_the_date(); ?></span>
+                        <p class="top-news-list-title"><?php the_title(); ?></p>
+                        <span class="top-news-list-arrow">→</span>
+                    </a>
+                    </li>
+                    <?php endwhile; ?>
+                </ul>
+
+                <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
     </section>
+
 
     <section class="recruit-section">
         <div class="recruit-image">
