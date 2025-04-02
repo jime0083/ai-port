@@ -24,7 +24,8 @@
                 <li><a href="<?php echo home_url('/company'); ?>">COMPANY</a></li>
                 <li><a href="<?php echo home_url('/recruit'); ?>">RECRUIT</a></li>
                 <li><a href="<?php echo home_url('/access'); ?>">ACCESS</a></li>
-                <li class="has-dropdown"><a href="#">CONTACT</a></li>
+                <li><a href="<?php echo home_url(''); ?>">QFA</a></li>
+                <li class="has-dropdown"><a href="<?php echo home_url('/contact'); ?>">CONTACT</a></li>
             </ul>
         </nav>
         <button class="menu-toggle">
