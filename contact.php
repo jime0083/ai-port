@@ -16,8 +16,6 @@ get_header(); ?>
     </div>
 </div>
 
-<p class="contact-1-label"></p>
-<p class="contact-1-required"></p>
-<p class="contact-1-label-en"></p>
+
 
 <?php get_footer(); ?>
