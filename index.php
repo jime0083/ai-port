@@ -1,13 +1,24 @@
 <?php get_header(); ?>
 
 
-    <div class="swiper-container">
+<section class="hero">
+    <div class="swiper hero-swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/green1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/garden1.jpg" alt="Image 2"></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/garden6.jpg" alt="Image 3"></div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/codeing.jpg" alt="Coding">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/enginer.jpg" alt="Engineering">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/garden office3.jpg" alt="Office">
+            </div>
+            <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/iphone.jpg" alt="Mobile">
+            </div>
         </div>
     </div>
+</section>
 
     <section class="event-section">
         <h2 class="section-title">イベント<span>CLASS & EVENT</span></h2>
@@ -17,10 +28,10 @@
                 <!-- 1つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/green book2.png" alt="クリスマスローズ">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/codeing.jpg" alt="コーディング">
                         <div class="event-info">
-                            <p class="date">2025.02.13</p>
-                            <h3>Zoony Garden・坂口則夫さんによるクリスマスローズ セミナー＆ワークショップ</h3>
+                            <p class="date">2024.02.13</p>
+                            <h3>WordPressを使用した某造園会社コーポレートサイト</h3>
                         </div>
                     </div>
                 </div>
@@ -28,10 +39,10 @@
                 <!-- 2つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden3.jpg" alt="スタジオスケジュール">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/enginer.jpg" alt="エンジニア">
                         <div class="event-info">
-                            <p class="date">2025.02.12</p>
-                            <h3>Barns STUDIO SCHEDULE 2025 Spring&Summer</h3>
+                            <p class="date">2024.01.15</p>
+                            <h3>Shopifyを使用したコーヒー豆販売ECサイトの開発</h3>
                         </div>
                     </div>
                 </div>
@@ -39,17 +50,50 @@
                 <!-- 3つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden4.jpg" alt="迎春の寄せ植え">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/iphone.jpg" alt="スマートフォン">
                         <div class="event-info">
-                            <p class="date">2024.12.07</p>
-                            <h3>迎春の寄せ植え</h3>
+                            <p class="date">2023.12.20</p>
+                            <h3>個人開発アプリ「中間くん」</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4つ目のカード -->
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden office3.jpg" alt="オフィス">
+                        <div class="event-info">
+                            <p class="date">2023.11.15</p>
+                            <h3>オフィス向けワークスペース予約システムの開発</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5つ目のカード -->
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden office6.png" alt="会議室">
+                        <div class="event-info">
+                            <p class="date">2023.10.20</p>
+                            <h3>会議室予約管理システムの開発と導入</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6つ目のカード -->
+                <div class="swiper-slide">
+                    <div class="event-card">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden office9.png" alt="チーム">
+                        <div class="event-info">
+                            <p class="date">2023.09.01</p>
+                            <h3>チーム管理ツールの開発とリリース</h3>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- ナビゲーションボタン -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
     </section>
 
@@ -213,48 +257,66 @@
     <?php get_footer(); ?>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .event-card {
+            cursor: pointer;
+        }
+    </style>
     <script>
-        // メインビジュアルのSwiper
-        var mainSwiper = new Swiper('.swiper-container', {
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
-            loop: true,
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false,
-            },
-            speed: 1000,
-        });
-
-        // イベントセクションのSwiper
-        var eventSwiper = new Swiper('.event-swiper', {
-            slidesPerView: 3, // 一度に3枚表示
-            spaceBetween: 30, // スライド間のスペース
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            speed: 800,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // レスポンシブ設定
-            breakpoints: {
-                // 768px以下の場合
-                768: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
+        document.addEventListener('DOMContentLoaded', function() {
+            // メインビジュアルのSwiper
+            const heroSwiper = new Swiper('.hero-swiper', {
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
                 },
-                // 769px以上1024px以下の場合
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                }
-            }
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+                speed: 1000,
+            });
+
+            // イベントセクションのSwiper
+            const eventSwiper = new Swiper('.event-swiper', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                speed: 800,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                },
+                watchOverflow: true,
+                centerInsufficientSlides: true,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                observer: true,
+                observeParents: true,
+                preventClicks: true,
+                preventClicksPropagation: true,
+                roundLengths: true
+            });
         });
     </script>
 </body>

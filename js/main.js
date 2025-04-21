@@ -18,3 +18,15 @@ jQuery(function($) {
     // スクロール時とページ読み込み時に実行
     $(window).on('scroll load', fadeIn);
 }); 
+
+
+    // Swiperの初期化
+    const heroSwiper = new Swiper('.hero-swiper', {
+        effect: 'fade',
+        speed: 1500,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
