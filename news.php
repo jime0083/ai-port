@@ -8,7 +8,7 @@ get_header(); ?>
     <div class="page-header-overlay"></div>
     <h1 class="page-title">NEWS</h1>
 </div>
-<section class="news-page-section">
+<section class="news-page-section ">
     <div class="news-page-container">
         <!-- ニュースアイテム1 -->
         <?php

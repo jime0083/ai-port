@@ -16,6 +16,10 @@ iframe{
     width: 100%;
 }
 
+.scale:hover img {
+    transform: scale(1.05);
+}
+
 /* ヘッダー */
 .header {
     position: fixed;
@@ -92,6 +96,7 @@ iframe{
     opacity: 0.8;
 }
 
+/* ハンバーガーメニューのスタイル */
 .menu-toggle {
     display: none;
     width: 30px;
@@ -100,6 +105,7 @@ iframe{
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .menu-toggle span {
@@ -115,11 +121,22 @@ iframe{
 .menu-toggle span:nth-child(2) { top: 9px; }
 .menu-toggle span:nth-child(3) { bottom: 0; }
 
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-    /* ヘッダー */
-    .header-container {
-        padding: 15px 20px;
+    .menu-toggle {
+        display: block;
     }
 
     .global-nav {
@@ -130,6 +147,8 @@ iframe{
         width: 100%;
         background-color: rgba(255, 255, 255, 0.95);
         padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
     }
 
     .global-nav.active {
@@ -142,20 +161,16 @@ iframe{
         gap: 20px;
     }
 
-    .menu-toggle {
+    .nav-list li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list a {
         display: block;
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        padding: 10px 0;
+        font-size: 16px;
     }
 
     /* フィロソフィーセクション */
@@ -168,56 +183,59 @@ iframe{
         gap: 40px;
     }
 
+    .philosophy-title {
+        margin-bottom: 10px;
+    }
+
     .philosophy-heading {
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 22px;
+        margin-bottom: 10px;
     }
 
     .philosophy-images {
-        height: 400px;
-        width: 100%;
-    }
-
-    .philosophy-image.main {
-        width: 70%;
-    }
-
-    .philosophy-image.sub {
-        width: 50%;
+        display: none;
     }
 
     /* 装飾用背景画像セクション */
     .decorative-image {
-        height: 250px;
+        height: 200px;
     }
 
     /* サービスセクション */
     .service-section {
-        padding: 60px 15px;
+        padding: 30px 15px !important;
     }
 
     .service-section .section-title {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     .service-grid {
-        grid-template-columns: 1fr;
+        display: block !important;
+        flex-direction: column;
         gap: 30px;
     }
 
+    .service-item {
+        width: 100% !important;
+    }
+
+    .service-item.wide {
+        grid-column: auto;
+        width: 100%;
+    }
+
     .service-item img {
-        height: 250px;
+        height: 200px !important;
     }
 
     .service-item.wide img {
-        height: 300px;
+        height: 200px !important;
     }
-
-
 
     /* リクルートセクション */
     .recruit-section {
-        margin: 60px 0;
+        margin: 30px 0;
     }
 
     .recruit-image {
@@ -340,9 +358,19 @@ iframe{
 }
 
 @media (max-width: 768px) {
-    .hero {
-        height: 200px;
+    .swiper-container {
+        height: 60vh;
+        margin-top: 60px;
     }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-swiper .swiper-slide {
+        height: 60vh;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -480,7 +508,7 @@ iframe{
 
 /* フィロソフィーセクション */
 .philosophy-section {
-    padding: 100px 20px;
+    padding: 0px 20px 50px 20px;
     background-color: #fff;
 }
 
@@ -500,14 +528,14 @@ iframe{
 .philosophy-title {
     font-size: 16px;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .philosophy-heading {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: normal;
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .philosophy-description {
@@ -749,7 +777,7 @@ iframe{
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .top-news-list-section {
-        padding: 60px 15px;
+        padding: 0 30px;
     }
 
     .top-news-container {
@@ -857,19 +885,18 @@ iframe{
 .recruit-section {
     position: relative;
     width: 100%;
-    margin: 100px 0;
+    margin: 30px 0;
 }
 
 .recruit-image {
     width: 100%;
-    height: 400px;
+    height: 200px;
     overflow: hidden;
     margin-bottom: 40px;
 }
 
 .recruit-image img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -885,10 +912,10 @@ iframe{
 }
 
 .recruit-title {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: normal;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .recruit-bottom {
@@ -1005,8 +1032,8 @@ iframe{
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .contact-section {
-        height: 500px;
-        margin-top: 60px;
+        height: 450px;
+        margin: 0px;
     }
 
     .contact-title {
@@ -1110,20 +1137,22 @@ iframe{
 }
 
 /* フェードインアニメーション */
-.fadeIn {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-out;
+.fade-in-class {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: opacity 1s cubic-bezier(0.33, 1, 0.68, 1), transform 1.5s cubic-bezier(0.33, 1, 0.68, 1) !important;
+    visibility: hidden !important;
 }
 
-.fadeIn.active {
-    opacity: 1;
-    transform: translateY(0);
+.fade-in-class.active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    visibility: visible !important;
 }
 
 /* Firefoxのパフォーマンス最適化 */
 @-moz-document url-prefix() {
-    .fadeIn {
+    .fade-in-class {
         will-change: opacity, transform;
     }
 }

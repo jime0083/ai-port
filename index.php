@@ -20,7 +20,7 @@
     </div>
 </section>
 
-    <section class="event-section">
+    <section class="event-section fade-in-class">
         <h2 class="section-title">イベント<span>CLASS & EVENT</span></h2>
         
         <div class="event-swiper">
@@ -28,10 +28,10 @@
                 <!-- 1つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/codeing.jpg" alt="コーディング">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden child.jpg" alt="コーディング">
                         <div class="event-info">
-                            <p class="date">2024.02.13</p>
-                            <h3>WordPressを使用した某造園会社コーポレートサイト</h3>
+                            <p class="date">2025.4.13</p>
+                            <h3>ワイヤープランターで楽しむ春</h3>
                         </div>
                     </div>
                 </div>
@@ -39,10 +39,10 @@
                 <!-- 2つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/enginer.jpg" alt="エンジニア">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden2.jpg" alt="エンジニア">
                         <div class="event-info">
-                            <p class="date">2024.01.15</p>
-                            <h3>Shopifyを使用したコーヒー豆販売ECサイトの開発</h3>
+                            <p class="date">2025.4.5</p>
+                            <h3>スプリングフェア</h3>
                         </div>
                     </div>
                 </div>
@@ -50,10 +50,10 @@
                 <!-- 3つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/iphone.jpg" alt="スマートフォン">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden6.jpg" alt="スマートフォン">
                         <div class="event-info">
-                            <p class="date">2023.12.20</p>
-                            <h3>個人開発アプリ「中間くん」</h3>
+                            <p class="date">2025.3.7</p>
+                            <h3>春のお庭大相談会</h3>
                         </div>
                     </div>
                 </div>
@@ -61,10 +61,10 @@
                 <!-- 4つ目のカード -->
                 <div class="swiper-slide">
                     <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden office3.jpg" alt="オフィス">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden4.jpg" alt="オフィス">
                         <div class="event-info">
-                            <p class="date">2023.11.15</p>
-                            <h3>オフィス向けワークスペース予約システムの開発</h3>
+                            <p class="date">2024.2.21</p>
+                            <h3>暮らしを楽しむハーブのワークショップ</h3>
                         </div>
                     </div>
                 </div>
@@ -74,19 +74,8 @@
                     <div class="event-card">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/garden office6.png" alt="会議室">
                         <div class="event-info">
-                            <p class="date">2023.10.20</p>
-                            <h3>会議室予約管理システムの開発と導入</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6つ目のカード -->
-                <div class="swiper-slide">
-                    <div class="event-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/garden office9.png" alt="チーム">
-                        <div class="event-info">
-                            <p class="date">2023.09.01</p>
-                            <h3>チーム管理ツールの開発とリリース</h3>
+                            <p class="date">2023.12.20</p>
+                            <h3>迎春の寄せ植え</h3>
                         </div>
                     </div>
                 </div>
@@ -97,7 +86,7 @@
         </div>
     </section>
 
-    <section class="philosophy-section">
+    <section class="philosophy-section fade-in-class">
         <div class="philosophy-container">
             <div class="philosophy-text">
                 <h2 class="philosophy-title">PHILOSOPHY</h2>
@@ -121,11 +110,11 @@
     </section>
 
     <!-- 装飾用の背景画像セクション -->
-    <section class="decorative-image">
+    <section class="decorative-image fade-in-class">
         <img src="<?php echo get_template_directory_uri(); ?>/img/green2.jpg" alt="水滴の付いた緑の葉" class="full-width-image">
     </section>
 
-    <section class="service-section">
+    <section class="service-section fade-in-class">
         <h2 class="section-title">人と緑の関係を科学する<br>新たな拠点「Green Labo」</h2>
         <p class="service-description">
             植物の生育には「光、水、土、温」の適切なコントロールが必要不可欠ですが、テクノロジーの発達とともに、特殊な環境や条件のもとでも緑化が可能となり、その手法も進化を続けています。「Green Labo」では最先端の緑化技術をはじめ、新しいサービスや情報を発信するとともに、多様な人々と交流を図りながら、緑のある豊かなライフスタイルデザインを探究しています。
@@ -184,7 +173,7 @@
         </div>
     </section>
 
-    <section class="top-news-list-section">
+    <section class="top-news-list-section fade-in-class">
         <div class="top-news-container">
             <div class="top-news-header-content">
                 <p class="top-news-label">NEWS & INFORMATION</p>
@@ -220,7 +209,7 @@
     </section>
 
 
-    <section class="recruit-section">
+    <section class="recruit-section fade-in-class">
         <div class="recruit-image">
             <img src="<?php echo get_template_directory_uri(); ?>/img/garden office9.png" alt="スタッフの写真">
         </div>
@@ -240,7 +229,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section fade-in-class">
         <div class="contact-overlay"></div>
         <div class="contact-container">
             <p class="contact-label">お問い合わせ</p>
@@ -258,6 +247,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <style>
         .event-card {
             cursor: pointer;

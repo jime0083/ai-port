@@ -9,7 +9,7 @@ get_header(); ?>
     <h1 class="page-title">WORKS</h1>
 </div>
 
-<section class="works-section">
+<section class="works-section ">
     <div class="works-container">
         <p class="works-label">CONSTRUCTION EXSAMPLE</p>
         <h2 class="works-title">施工事例</h2>

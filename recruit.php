@@ -9,7 +9,7 @@ get_header(); ?>
     <h1 class="page-title">RECRUIT</h1>
 </div>
 
-<section class="recruitment-section">
+<section class="recruitment-section ">
     <div class="recruitment-container">
         <div class="recruitment-content">
             <div class="recruitment-text">
@@ -25,7 +25,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="job-description-section">
+<section class="job-description-section ">
     <div class="job-description-container">
         <h2 class="job-description-title">花と緑の生活空間プロデュース</h2>
         <p class="job-description-text">
@@ -83,7 +83,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="contact-section">
+<section class="contact-section ">
     <div class="contact-overlay"></div>
     <div class="contact-container">
         <p class="contact-label">お問い合わせ</p>

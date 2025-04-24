@@ -13,18 +13,7 @@
                     定休日：水曜日
                 </p>
             </div>
-            <nav class="footer-nav">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'footer-menu',
-                    'container' => false,
-                    'menu_class' => '',
-                    'items_wrap' => '<ul>%3$s</ul>'
-                ));
-                ?>
-            </nav>
         </div>
-        <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> All Rights Reserved.</p>
     </div>
 </footer>
 

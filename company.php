@@ -10,7 +10,7 @@ get_header(); ?>
     <h1 class="page-title">COMPANY</h1>
 </div>
 
-<section class="vision-section">
+<section class="vision-section ">
     <div class="vision-container">
         <p class="vision-label">VISION</p>
         <h2 class="vision-title">花と緑で社会に貢献する</h2>
@@ -55,7 +55,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="history-section">
+<section class="history-section ">
     <div class="history-header">
         <h2 class="history-title">沿革</h2>
     </div>
@@ -92,7 +92,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="company-overview-section">
+<section class="company-overview-section ">
     <div class="overview-header">
         <h2 class="overview-title">会社概要</h2>
     </div>

@@ -9,7 +9,7 @@ get_header(); ?>
     <h1 class="page-title">ACCESS</h1>
 </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22450.22666203898!2d139.7293971382098!3d35.67860302761904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1743142262281!5m2!1sja!2sjp"height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe class="" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22450.22666203898!2d139.7293971382098!3d35.67860302761904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1743142262281!5m2!1sja!2sjp"height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <section class="access-info-section">
     <div class="access-info-container">
@@ -44,7 +44,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="contact-section">
+        <section class="contact-section ">
             <div class="contact-overlay"></div>
                 <div class="contact-container">
                     <p class="contact-label">お問い合わせ</p>

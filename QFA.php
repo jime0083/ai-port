@@ -9,7 +9,7 @@ get_header(); ?>
     <h1 class="page-title">FAQ</h1>
 </div>
 
-<div class="faq-section">
+<div class="faq-section ">
     <div class="faq-container">
         <h2 class="faq-heading">よくあるご質問</h2>
         <p class="faq-description">お客様から多く寄せられているご質問にお答えいたします。「よくあるご質問」で解決しない場合は、お問い合わせよりご連絡ください。</p>
