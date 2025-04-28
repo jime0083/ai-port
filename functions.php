@@ -39,8 +39,8 @@ function theme_scripts() {
     wp_enqueue_script('jquery');
     
     // スクリプトの読み込み
-    wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), null, true);
-    wp_enqueue_script('main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
+    wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper/swiper-bundle.min.js', array('jquery'), null, true);
+    wp_enqueue_script('main-script', get_template_directory_uri() . '/js/main.js', array('jquery', 'swiper-script'), null, true);
 }
 add_action('wp_enqueue_scripts', 'theme_scripts'); 
 

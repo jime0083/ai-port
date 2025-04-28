@@ -6,6 +6,7 @@
     <title>Jime Company</title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <?php wp_head(); ?>
 </head>
 <body>
 

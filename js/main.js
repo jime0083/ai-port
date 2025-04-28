@@ -1,12 +1,13 @@
+// ハンバーガーメニューの機能
 jQuery(function($) {
     // ハンバーガーメニューのトグル
-    $('.menu-toggle').on('click', function() {
+    $(document).on('click', '.menu-toggle', function() {
         $(this).toggleClass('active');
         $('.global-nav').toggleClass('active');
     });
 
     // メニュー項目をクリックしたらメニューを閉じる
-    $('.nav-list a').on('click', function() {
+    $(document).on('click', '.nav-list a', function() {
         $('.menu-toggle').removeClass('active');
         $('.global-nav').removeClass('active');
     });
@@ -32,14 +33,18 @@ jQuery(function($) {
 });
 
 // Swiperの初期化
-const heroSwiper = new Swiper('.hero-swiper', {
-    effect: 'fade',
-    speed: 1500,
-    autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-    },
-    loop: true,
+jQuery(function($) {
+    if ($('.hero-swiper').length) {
+        new Swiper('.hero-swiper', {
+            effect: 'fade',
+            speed: 1500,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    }
 });
 
 
