@@ -5,16 +5,16 @@
     <div class="swiper hero-swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/codeing.jpg" alt="Coding">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/flower.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/enginer.jpg" alt="Engineering">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/garden office4.png">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/garden office3.jpg" alt="Office">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/garden child.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/iphone.jpg" alt="Mobile">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/garden office9.png">
             </div>
         </div>
     </div>
@@ -103,7 +103,7 @@
                 </p>
             </div>
             <div class="philosophy-images">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/garden5.jpg" alt="緑の葉とGreen Laboロゴ" class="philosophy-image main">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/garden5.jpg" alt="緑の葉とJime Companyロゴ" class="philosophy-image main">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/flower.jpg" alt="カラフルな花々" class="philosophy-image sub">
             </div>
         </div>
@@ -115,14 +115,14 @@
     </section>
 
     <section class="service-section fade-in-class">
-        <h2 class="section-title">人と緑の関係を科学する<br>新たな拠点「Green Labo」</h2>
+        <h2 class="section-title">人と緑の関係を科学する<br>新たな拠点「GreenLabo」</h2>
         <p class="service-description">
             植物の生育には「光、水、土、温」の適切なコントロールが必要不可欠ですが、テクノロジーの発達とともに、特殊な環境や条件のもとでも緑化が可能となり、その手法も進化を続けています。「Green Labo」では最先端の緑化技術をはじめ、新しいサービスや情報を発信するとともに、多様な人々と交流を図りながら、緑のある豊かなライフスタイルデザインを探究しています。
         </p>
 
         <div class="service-grid">
             <!-- Barns -->
-            <div class="service-item">
+            <div class="service-item pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/garden company.png" alt="Barns">
                 <div class="service-content">
                     <h3>Barns<span>SHOWROOM & ATELIER</span></h3>
@@ -132,7 +132,7 @@
             </div>
 
             <!-- Café Musee -->
-            <div class="service-item">
+            <div class="service-item pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/garden office6.png" alt="Café Musee">
                 <div class="service-content">
                     <h3>Café Musee<span>GREEN HEALING RELAXATION</span></h3>
@@ -142,7 +142,7 @@
             </div>
 
             <!-- Planning -->
-            <div class="service-item">
+            <div class="service-item pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/green book2.png" alt="Planning">
                 <div class="service-content">
                     <h3>Planning<span>GARDEN EXTERIOR</span></h3>
@@ -152,7 +152,7 @@
             </div>
 
             <!-- Maintenance -->
-            <div class="service-item">
+            <div class="service-item pointer">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/green man5.png" alt="Maintenance">
                 <div class="service-content">
                     <h3>Maintenance<span>GARDEN SERVICE</span></h3>
@@ -162,7 +162,7 @@
             </div>
 
             <!-- Office Green -->
-            <div class="service-item wide">
+            <div class="service-item pointer wide">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/garden company.png" alt="Office Green">
                 <div class="service-content">
                     <h3>Office Green<span>BIOPHILIC DESIGN</span></h3>
@@ -267,7 +267,7 @@
                     delay: 1500,
                     disableOnInteraction: false,
                 },
-                speed: 1000,
+                speed: 500,
             });
 
             // イベントセクションのSwiper

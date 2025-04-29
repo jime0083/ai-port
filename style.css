@@ -20,6 +20,10 @@ iframe{
     transform: scale(1.05);
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {

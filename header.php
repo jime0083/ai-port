@@ -21,8 +21,8 @@
                 <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
                 <li><a href="<?php echo esc_url(home_url('/work')); ?>">Work</a></li>
                 <li><a href="<?php echo esc_url(home_url('/company')); ?>">Company</a></li>
-                <li><a href="<?php echo esc_url(home_url('/news')); ?>">News</a></li>
-                <li><a href="<?php echo esc_url(home_url('/faq')); ?>">FAQ</a></li>
+                <li><a href="<?php echo esc_url(home_url('/news-list')); ?>">News</a></li>
+                <li><a href="<?php echo esc_url(home_url('/qfa')); ?>">QFA</a></li>
                 <li><a href="<?php echo esc_url(home_url('/contact')); ?>">Contact</a></li>
             </ul>
         </nav>
