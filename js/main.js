@@ -1,16 +1,6 @@
-// ハンバーガーメニューの機能
-jQuery(function($) {
-    // ハンバーガーメニューのトグル
-    $(document).on('click', '.menu-toggle', function() {
-        $(this).toggleClass('active');
-        $('.global-nav').toggleClass('active');
-    });
 
-    // メニュー項目をクリックしたらメニューを閉じる
-    $(document).on('click', '.nav-list a', function() {
-        $('.menu-toggle').removeClass('active');
-        $('.global-nav').removeClass('active');
-    });
+jQuery(function($) {
+
 
     // フェードイン要素の設定
     function fadeIn() {
